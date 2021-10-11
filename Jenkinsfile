@@ -17,6 +17,7 @@ pipeline {
                     cd /var/lib/jenkins/workspace/Git-Creds-Test
                     terraform init
                     terraform plan
+                    terraform apply --auto-approve          #terraform destroy --auto-approve
                 '''
             }
         }
